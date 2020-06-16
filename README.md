@@ -5,9 +5,9 @@
 1. Install Dependency:
 npm install
 
-2. npm start 
+2. Start Server: npm start 
 
-# Some Technologies that I used here are:
+# Some Modern Technologies that I used here are:
 1. Bootstrap 4.3
 2. MVC Pattern
 3. Node JS
