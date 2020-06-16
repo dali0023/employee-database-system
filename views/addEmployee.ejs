@@ -1,0 +1,49 @@
+<%- include('partials/header.ejs')%>
+<div class="container-fluid bg-light py-3">
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+      <div class="card card-body">
+        <h3 class="text-center mb-4">Add New Employee</h3>
+        
+        <form action="/add-employee" method="POST">
+          <fieldset>
+            <div class="form-group has-error">
+              <input
+                class="form-control input-lg"
+                placeholder="Enter a Name"
+                name="title"
+                type="text"
+                required
+              />
+            </div>
+            <div class="form-group has-error">
+              <input
+                class="form-control input-lg"
+                placeholder="Enter a Designation"
+                name="designation"
+                type="text"
+                required
+              />
+            </div>
+            <div class="form-group has-error">
+              <input
+                class="form-control input-lg"
+                placeholder="Enter Salary"
+                name="salary"
+                type="text"
+                required
+              />
+            </div>
+
+            <input
+              class="btn btn-lg btn-danger btn-block"
+              value="Add To Database"
+              type="submit"
+            />
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include('partials/footer.ejs')%>

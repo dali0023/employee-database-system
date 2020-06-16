@@ -1,0 +1,57 @@
+<%- include('partials/header.ejs')%>
+<div class="container-fluid bg-light py-3">
+  <div class="row">
+    <div class="col-md-8 mx-auto">
+      <div class="card card-body">
+        <h3 class="text-center mb-4">Search Employee</h3>
+
+        <form action="/search-results" method="GET">
+          <fieldset>
+            <div class="form-group has-error">
+              <input
+                class="form-control input-lg"
+                placeholder="Employee Name"
+                name="searchName"
+                type="text"
+                required
+              />
+            </div>
+
+            <input
+              class="btn btn-lg btn-danger btn-block"
+              value="Search in Database"
+              type="submit"
+            />
+          </fieldset>
+        </form>
+        <br />
+        <% if(results){ %>
+        <h6 style="color: red;">Search Results</h6>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Designation</th>
+              <th>Salary</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td><%= results.title %></td>
+              <td><%= results.designation %></td>
+              <td><%= results.salary %></td>
+            </tr>
+          </tbody>
+        </table>
+        <% } else if(results != ""){ %>
+        <div class="alert alert-danger" role="alert">
+          <strong>Oh snap!</strong> Oops, Data does not exits!
+        </div>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include('partials/footer.ejs')%>
