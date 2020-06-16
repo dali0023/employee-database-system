@@ -1,5 +1,5 @@
 # Employee Database System
-# I followed Model-View-Controller structure for making this system.
+# Model-View-Controller structure.
 
 # Steps are:
 1. Install Dependency:
