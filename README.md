@@ -1,4 +1,4 @@
-# employee-database-system
+# Employee Database System
 # I followed Model-View-Controller structure for making this system.
 
 # Steps are:
