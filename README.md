@@ -1,11 +1,11 @@
 # employee-database-system
 # I followed Model-View-Controller structure for making this system.
 
-Steps are:
-# 1. Install Dependency:
+# Steps are:
+1. Install Dependency:
 npm install
 
-# 2. npm start 
+2. npm start 
 
 # Some Technologies that I used here are:
 1. Bootstrap 4.3
@@ -17,5 +17,5 @@ npm install
 7. session
 8. MongoDB Database(Mongoose)
 
---------Enjoy---------
+# --------Enjoy---------
 
